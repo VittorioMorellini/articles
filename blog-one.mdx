@@ -14,7 +14,7 @@ export const year = 2023
 
 ## Redux to manage state in a React application
 
-In {year}, Redux rapresents probably the better state management product in react world.
+In {{year}}, Redux rapresents probably the better state management product in react world.
 How redux works? It is a unidirectional dataflow.
 A component dispatch an action to the reducer. 
 Before the introduction of Redux toolkit it was more difficult to manage actions.
@@ -95,7 +95,7 @@ After it, the Ui is automatically updated from the selector of the store. The us
 In the class component, using connect, I get mapsStateToProps that updates the props from store.
 In functional component it is easier with useSelector hook and the component is subscribed to the store.
 
-```conf
+```ts
     const isBusy = useSelector((root: RootState) => root.dittaServizio.isBusy);
     const currentItem = useSelector((state: RootState) => state.dittaServizio.currentItem!);
 ```
@@ -107,7 +107,7 @@ With the __dispatch__ statement, the component can dispatch an action to the red
 
 Dispatching an action is the only way to change the state and in functional components can be done by the hook __useDispatch__ that returns the method
 
-```conf
+```ts
     const dispatch = useDispatch<any>();
 ```
 
